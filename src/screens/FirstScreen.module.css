@@ -1,0 +1,300 @@
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow-x: hidden;
+}
+ 
+.description {
+  font-size: 1.2rem;
+  font-family: "AssistantR";
+  text-align: center;
+  margin: 1% auto;
+  direction: rtl;
+  font-weight: 300;
+  width: 90%;
+  background: linear-gradient(45deg, 
+  #e8b4b8 0%,     /* פודרה ורוד כהה */
+  #f5d0d4 20%,    /* פודרה ורוד בינוני */
+  #f9dce0 40%,    /* פודרה ורוד בהיר */
+  #ffcbd2 60%,    /* פודרה ורוד מיוחד */
+  #ffa6b3 80%,    /* פודרה ורוד עמוק */
+  #e8b4b8 100%    /* פודרה ורוד כהה */
+);
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+  animation: textFade 1.5s ease-out forwards;
+  animation-delay: 0.6s;
+  opacity: 0;
+}
+ 
+.imageContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  display: flex;
+}
+ 
+.backgroundImage {
+  flex: 1;
+  height: 100%;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+ 
+.leftImage, .rightImage {
+  display: none;
+}
+ 
+.centerImage {
+  background-image: url('../images/דניאלה\ יוסופוב\ תמונה\ מרכזית.png');
+}
+ 
+.contentBox {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 2rem 1rem;
+  width: 90%;
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 15px;
+  z-index: 1;
+  margin-bottom: 5%;
+  box-shadow: 
+      0 4px 30px rgba(0, 0, 0, 0.1),
+      inset 0 0 20px rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translate(-50%, 20px);
+  }
+  to {
+      opacity: 1;
+      transform: translate(-50%, 0);
+  }
+}
+ 
+.title {
+  font-family: 'PlayFair';
+  font-size: 2.8rem;
+ font-weight: 300;
+  width: 120%;
+  margin-left: -10%;
+  background: linear-gradient(45deg, 
+      #e8b4b8 0%,     /* פודרה ורוד כהה */
+      #f5d0d4 20%,    /* פודרה ורוד בינוני */
+      #f9dce0 40%,    /* פודרה ורוד בהיר */
+      #ffcbd2 60%,    /* פודרה ורוד מיוחד */
+      #ffa6b3 80%,    /* פודרה ורוד עמוק */
+      #e8b4b8 100%    /* פודרה ורוד כהה */
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  animation: shimmer 20s infinite linear;
+  background-size: 200% auto;
+}
+
+@keyframes shimmer {
+  0% {
+      background-position: -200% center;
+  }
+  100% {
+      background-position: 200% center;
+  }
+}
+
+.arrowContainer {
+  margin-top: 20px;
+  animation: arrowFadeIn 1.5s ease-out forwards;
+  animation-delay: 0.9s;
+  opacity: 0;
+}
+
+.bounceArrow {
+  animation: bounce 2s infinite;
+  color: #f5d0d4;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-20px);
+  }
+  60% {
+      transform: translateY(-10px);
+  }
+}
+
+@keyframes arrowFadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+@keyframes textFade {
+  0% {
+      opacity: 0;
+      transform: translateY(15px);
+  }
+  
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+ 
+/* Media Queries */
+@media (max-width: 350px) {
+  .contentBox {
+      padding: 0.5rem;
+      width: 90%;
+      bottom: 0%;
+  }
+  .title {
+      font-size: 2.2rem;
+      width: 116%;
+      margin-left: -8%;
+  }
+}
+ 
+@media (min-width: 350px) {
+  .contentBox {
+      padding: 1.5rem 0.7rem;
+      width: 90%;
+      bottom: 10%;
+  }
+  .title {
+      font-size: 2.2rem;
+      width: 118%;
+      margin-left: -9%;
+  }
+}
+ 
+@media (min-width: 450px) {
+  .contentBox {
+      padding: 1.5rem;
+      width: 85%;
+      bottom: 5%;
+  }
+  .title {
+      font-size: 2.3rem;
+      width: 120%;
+      margin-left: -10%;
+  }
+}
+ 
+@media (min-width: 550px) {
+  .leftImage {
+      display: block;
+      background-image: url('../images/דניאלה\ יוסופוב\ תמונה\ שמאלית.png');
+  }
+  .rightImage {
+      display: block;
+      background-image: url('../images/דניאלה\ יוסופוב\ תמונה\ ימנית.png');
+  }
+  .contentBox {
+      padding: 1.8rem;
+      width: 80%;
+      bottom: 5%;
+  }
+  .title {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      width: 125%;
+      margin-left: -12.5%;
+  }
+}
+ 
+@media (min-width: 650px) {
+  .contentBox {
+      padding: 2rem;
+      width: 75%;
+      bottom: 5%;
+  }
+  .title {
+      font-size: 2.7rem;
+      width: 130%;
+      margin-left: -15%;
+  }
+}
+ 
+@media (min-width: 750px) {
+  .contentBox {
+      width: 70%;
+      bottom: 5%;
+  }
+  .title {
+      font-size: 2.9rem;
+      width: 135%;
+      margin-left: -17.5%;
+  }
+}
+ 
+@media (min-width: 850px) {
+  .contentBox {
+      width: 65%;
+      bottom: 5%;
+  }
+  .title {
+      width: 140%;
+      margin-left: -20%;
+  }
+}
+ 
+@media (min-width: 950px) {
+  .contentBox {
+      width: 60%;
+      bottom: 15%;
+  }
+  .title {
+      font-size: 3.1rem;
+      width: 145%;
+      margin-left: -22.5%;
+  }
+}
+ 
+@media (min-width: 1050px) {
+  .contentBox {
+      width: 30%;
+      bottom: 20%;
+  }
+  .title {
+      font-size: 2.3rem;
+      width: 150%;
+      margin-left: -25%;
+  }
+}
+ 
+@media (min-width: 1150px) {
+  .contentBox {
+      width: 33%;
+      bottom: -5%;
+  }
+  .title {
+      font-size: 2.5rem;
+      width: 150%;
+      margin-left: -25%;
+  }
+}
