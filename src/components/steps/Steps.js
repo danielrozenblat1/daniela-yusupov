@@ -95,7 +95,7 @@ const Timeline = () => {
               style={{ 
                 height: `${scrollProgress * 100}%`,
                 transition: 'height 0.1s linear',
-                background: 'linear-gradient(180deg, #FFB6C1 0%, #FFC0CB 100%)'
+                background: 'linear-gradient(180deg, #ff9eb4 0%, #ffb6c1 100%)'
               }}
             />
           </div>
@@ -112,14 +112,14 @@ const Timeline = () => {
                   visibleSteps.has(step.number) ? styles.numberActive : styles.numberInactive
                 }`}
                 style={{
-                  borderColor: '#FFB6C1',
+                  borderColor: '#ffb6c1',
                   background: visibleSteps.has(step.number) 
-                    ? 'linear-gradient(135deg, #FFB6C1 0%, #FFC0CB 100%)'
+                    ? 'linear-gradient(135deg, #ff9eb4 0%, #ffb6c1 100%)'
                     : '#FFFFFF'
                 }}
               >
                 <step.icon className={styles.iconStyle} size={24} 
-                  color={visibleSteps.has(step.number) ? '#FFFFFF' : '#FFB6C1'} />
+                  color={visibleSteps.has(step.number) ? '#FFFFFF' : '#ff9eb4'} />
                 <div className={styles.numberGlow} />
               </div>
 
@@ -127,7 +127,7 @@ const Timeline = () => {
                 <div className={`${styles.glassEffect} ${
                   visibleSteps.has(step.number) ? styles.cardActive : ''
                 }`}>
-                  <h3 className={styles.timelineTitle} style={{ color: '#FFB6C1' }}>
+                  <h3 className={styles.timelineTitle} style={{ color: '#ff9eb4' }}>
                     {step.title}
                   </h3>
                   <p className={styles.timelineText}>

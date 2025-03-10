@@ -1,183 +1,406 @@
-.container {
-    width: 100%;
-    overflow: hidden;
+.sliderContainer {
+  width: 80%;
+  margin: auto;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-dots {
+  color: var(--slick-dots-color, inherit);
+}
+
+.slick-dots li button {
+  color: var(--slick-dots-color, inherit);
+}
+
+.center {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* כדי שהתמונה תמלא את כל השטח */
+  aspect-ratio: 2/3; /* יוצר יחס של 2:3 (400:600) */
+}
+
+.explain {
+  font-size: 25px;
+  direction: rtl;
+  width: 65%;
+  color: black;
+  justify-content: center;
+  text-align: center;
+  margin: 2% auto;
+  font-family: "AssistantR";
+}
+
+/* נקודות שבירה למסכים שונים */
+@media only screen and (max-width: 350px) {
+  .sliderContainer {
+    width: 80%;
+    margin: auto;
     position: relative;
+    height: auto;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slick-dots {
+    color: var(--slick-dots-color, inherit);
   }
   
-  .explain {
-    font-size: 1.4rem;
-    direction: rtl;
-    width: 70%;
-    text-align: center;
-    margin: 2% auto;
-    font-family: "AssistantR";
+  .slick-dots li button {
+    color: var(--slick-dots-color, inherit);
   }
   
-  .title {
-    font-size: 2.5rem;
-    font-family: "Assistant";
-    text-align: center;
-    margin: 1% auto;
-    direction: rtl;
+  .center {
+    display: flex;
     width: 100%;
-    font-weight: 800;
-    color: black;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    justify-content: center;
   }
-  
-  .scrollTrack {
-    display: flex;
-    width: fit-content;
-    animation: scroll 70s linear infinite;
-    gap: 20px;
-  }
-  
-  .scrollContainer {
-    display: flex;
-    gap: 20px;
-    padding: 20px 0;
-  }
-  
-  .imageWrapper {
-    flex-shrink: 0;
-    width: 300px;
-    height: 400px;
-  }
-  
+
   .image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 8px;
+    aspect-ratio: 2/3; /* יחס של 2:3 (400:600) */
+  }
+
+  .explain {
+    font-size: 1.1rem;
+    direction: rtl;
+    width: 90%;
+    color: black;
+    justify-content: center;
+    text-align: center;
+    margin: 2% auto;
+    font-family: "AssistantR";
+  }
+}
+
+@media only screen and (min-width: 350px) and (max-width: 450px) {
+  .sliderContainer {
+    width: 80%;
+    margin: auto;
+    height: auto;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slick-dots {
+    color: var(--slick-dots-color, inherit);
   }
   
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
+  .slick-dots li button {
+    color: var(--slick-dots-color, inherit);
   }
   
-  /* Under 350px */
-  @media only screen and (max-width: 349px) {
-    .title {
-      font-size: 1.6rem;
-    }
-    .explain {
-      font-size: 1.1rem;
-      width: 85%;
-    }
-    .imageWrapper {
-      width: 200px;
-      height: 300px;
-    }
+  .center {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .explain {
+    font-size: 1.2rem;
+    direction: rtl;
+    width: 90%;
+    color: black;
+    justify-content: center;
+    text-align: center;
+    margin: 2% auto;
+    font-family: "AssistantR";
+  }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 550px) {
+  .sliderContainer {
+    width: 85%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slick-dots {
+    color: var(--slick-dots-color, inherit);
   }
   
-  /* 350px - 450px */
-  @media only screen and (min-width: 350px) and (max-width: 450px) {
-    .title {
-      font-size: 1.6rem;
-    }
-    .explain {
-      font-size: 1.2rem;
-      width: 90%;
-    }
-    .imageWrapper {
-      width: 230px;
-      height: 330px;
-    }
+  .slick-dots li button {
+    color: var(--slick-dots-color, inherit);
   }
   
-  /* 450px - 550px */
-  @media only screen and (min-width: 451px) and (max-width: 550px) {
-    .title {
-      font-size: 2rem;
-    }
-    .explain {
-      font-size: 1.3rem;
-      width: 85%;
-    }
-    .imageWrapper {
-      width: 250px;
-      height: 350px;
-    }
+  .center {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .explain {
+    font-size: 20px;
+    direction: rtl;
+    width: 90%;
+    color: black;
+    justify-content: center;
+    text-align: center;
+    margin: 5% auto;
+    font-family: "AssistantR";
+  }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 650px) {
+  .sliderContainer {
+    width: 85%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slick-dots {
+    color: var(--slick-dots-color, inherit);
   }
   
-  /* 550px - 650px */
-  @media only screen and (min-width: 551px) and (max-width: 650px) {
-    .title {
-      font-size: 2.1rem;
-    }
-    .imageWrapper {
-      width: 260px;
-      height: 360px;
-    }
+  .slick-dots li button {
+    color: var(--slick-dots-color, inherit);
   }
   
-  /* 650px - 750px */
-  @media only screen and (min-width: 651px) and (max-width: 750px) {
-    .title {
-      font-size: 2.2rem;
-    }
-    .imageWrapper {
-      width: 270px;
-      height: 370px;
-    }
+  .center {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .explain {
+    font-size: 22px;
+    direction: rtl;
+    width: 80%;
+    color: black;
+    justify-content: center;
+    text-align: center;
+    margin: 5% auto;
+    font-family: "AssistantR";
+  }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 750px) {
+  .sliderContainer {
+    width: 85%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slick-dots {
+    color: var(--slick-dots-color, inherit);
   }
   
-  /* 750px - 850px */
-  @media only screen and (min-width: 751px) and (max-width: 850px) {
-    .title {
-      font-size: 2.3rem;
-    }
-    .imageWrapper {
-      width: 280px;
-      height: 380px;
-    }
+  .slick-dots li button {
+    color: var(--slick-dots-color, inherit);
   }
   
-  /* 850px - 950px */
-  @media only screen and (min-width: 851px) and (max-width: 950px) {
-    .title {
-      font-size: 2.4rem;
-    }
-    .imageWrapper {
-      width: 285px;
-      height: 385px;
-    }
+  .center {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .explain {
+    font-size: 22px;
+    direction: rtl;
+    width: 80%;
+    color: black;
+    justify-content: center;
+    text-align: center;
+    margin: 5% auto;
+    font-family: "AssistantR";
+  }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 850px) {
+  .sliderContainer {
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slick-dots {
+    color: var(--slick-dots-color, inherit);
   }
   
-  /* 950px - 1050px */
-  @media only screen and (min-width: 951px) and (max-width: 1050px) {
-    .title {
-      font-size: 2.4rem;
-    }
-    .imageWrapper {
-      width: 290px;
-      height: 390px;
-    }
+  .slick-dots li button {
+    color: var(--slick-dots-color, inherit);
   }
   
-  /* 1050px - 1150px */
-  @media only screen and (min-width: 1051px) and (max-width: 1150px) {
-    .title {
-      font-size: 2.5rem;
-    }
-    .imageWrapper {
-      width: 295px;
-      height: 395px;
-    }
+  .center {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .explain {
+    font-size: 22px;
+    direction: rtl;
+    width: 80%;
+    color: black;
+    justify-content: center;
+    text-align: center;
+    margin: 5% auto;
+    font-family: "AssistantR";
+  }
+}
+
+@media only screen and (min-width: 850px) and (max-width: 950px) {
+  .sliderContainer {
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slick-dots {
+    color: var(--slick-dots-color, inherit);
   }
   
-  /* 1150px - 1250px */
-  @media only screen and (min-width: 1151px) and (max-width: 1250px) {
-    .title {
-      font-size: 2.5rem;
-    }
-    .imageWrapper {
-      width: 300px;
-      height: 400px;
-    }
+  .slick-dots li button {
+    color: var(--slick-dots-color, inherit);
   }
+  
+  .center {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .explain {
+    font-size: 22px;
+    direction: rtl;
+    width: 80%;
+    color: black;
+    justify-content: center;
+    text-align: center;
+    margin: 5% auto;
+    font-family: "AssistantR";
+  }
+}
+
+@media only screen and (min-width: 950px) and (max-width: 1050px) {
+  .sliderContainer {
+    width: 75%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slick-dots {
+    color: var(--slick-dots-color, inherit);
+  }
+  
+  .slick-dots li button {
+    color: var(--slick-dots-color, inherit);
+  }
+  
+  .center {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .explain {
+    font-size: 22px;
+    direction: rtl;
+    width: 80%;
+    color: black;
+    justify-content: center;
+    text-align: center;
+    margin: 5% auto;
+    font-family: "AssistantR";
+  }
+}
+
+@media only screen and (min-width: 1050px) and (max-width: 1250px) {
+  .sliderContainer {
+    width: 85%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slick-dots {
+    color: var(--slick-dots-color, inherit);
+  }
+  
+  .slick-dots li button {
+    color: var(--slick-dots-color, inherit);
+  }
+  
+  .center {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .explain {
+    font-size: 22px;
+    direction: rtl;
+    width: 75%;
+    color: black;
+    justify-content: center;
+    text-align: center;
+    margin: 3% auto;
+    font-family: "AssistantR";
+  }
+}

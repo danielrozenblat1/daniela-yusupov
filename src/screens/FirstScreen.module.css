@@ -63,9 +63,9 @@ color: transparent;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem;
   width: 90%;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(2px);
   background: rgba(0, 0, 0, 0.35);
   border-radius: 15px;
   z-index: 1;
@@ -95,12 +95,12 @@ color: transparent;
   width: 120%;
   margin-left: -10%;
   background: linear-gradient(45deg, 
-      #e8b4b8 0%,     /* פודרה ורוד כהה */
-      #f5d0d4 20%,    /* פודרה ורוד בינוני */
-      #f9dce0 40%,    /* פודרה ורוד בהיר */
-      #ffcbd2 60%,    /* פודרה ורוד מיוחד */
+      #ffaab1 0%,     /* פודרה ורוד כהה */
+      #ffaeb4 20%,    /* פודרה ורוד בינוני */
+      #d6a6ad 40%,    /* פודרה ורוד בהיר */
+      #deaab1 60%,    /* פודרה ורוד מיוחד */
       #ffa6b3 80%,    /* פודרה ורוד עמוק */
-      #e8b4b8 100%    /* פודרה ורוד כהה */
+      #f6a3aa 100%    /* פודרה ורוד כהה */
   );
   -webkit-background-clip: text;
   background-clip: text;
@@ -183,7 +183,7 @@ color: transparent;
   .contentBox {
       padding: 1.5rem 0.7rem;
       width: 90%;
-      bottom: 10%;
+      bottom: 5%;
   }
   .title {
       font-size: 2.2rem;

@@ -12,14 +12,20 @@
 
 .title {
   font-size: 2.5rem;
-
   margin: 2rem 2rem 4rem 0;
   font-family: 'Assistant', sans-serif;
   text-align: center;
   direction: rtl;
-  text-shadow: 2px 2px 4px rgba(255, 182, 193, 0.2);
   line-height: 1.2;
   font-weight: 400;
+  background: linear-gradient(135deg, 
+    rgb(255, 169, 169) 30%, 
+    rgb(223, 124, 124) 50%, 
+    rgb(253, 141, 141) 70%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .timeline {
@@ -37,7 +43,7 @@
   bottom: 0;
   width: 3px;
   background: linear-gradient(180deg, 
-    rgba(255, 182, 193, 0.1) 0%, 
+    rgba(202, 54, 76, 0.1) 0%, 
     rgba(255, 192, 203, 0.1) 50%, 
     rgba(255, 182, 193, 0.1) 100%
   );
@@ -50,7 +56,7 @@
   left: 0;
   top: 0;
   width: 100%;
-  background: linear-gradient(180deg, #FFB6C1 0%, #FFC0CB 100%);
+  background: linear-gradient(180deg, #ff8b9d 0%, #FFC0CB 100%);
   box-shadow: 
     0 0 10px rgba(255, 182, 193, 0.5),
     0 0 20px rgba(255, 182, 193, 0.3);
@@ -151,9 +157,9 @@
   padding: 1.75rem;
   border: 1px solid rgba(255, 182, 193, 0.15);
   box-shadow: 
-    inset 1px 1px 8px rgba(255, 182, 193, 0.25),
-    inset -1px -1px 8px rgba(255, 235, 240, 0.35),
-    inset 3px 3px 10px rgba(255, 160, 180, 0.07),
+    inset 1px 1px 8px rgba(247, 137, 154, 0.25),
+    inset -1px -1px 8px rgba(153, 100, 113, 0.35),
+    inset 3px 3px 10px rgba(132, 58, 74, 0.07),
     inset 0 0 20px rgba(255, 215, 225, 0.12),
     0 4px 6px rgba(255, 182, 193, 0.1),
     0 0 0 1px rgba(255, 182, 193, 0.05);
@@ -163,7 +169,7 @@
   min-height: 200px;
   background: linear-gradient(
     135deg,
-    rgba(255, 253, 252, 0.97) 0%,
+    rgba(255, 253, 253, 0.97) 0%,
     rgba(255, 250, 245, 0.92) 100%
   );
   backdrop-filter: blur(3px);
@@ -232,12 +238,12 @@
 .timelineTitle {
   font-size: 1.25rem;
   margin-bottom: 1rem;
-  color: #FFB6C1;
+  color: #ffa2b0;
   font-family: 'Assistant', sans-serif;
 }
 
 .timelineText {
-  color: #666;
+  color: #000000;
   line-height: 1.75;
   font-family: 'AssistantR', sans-serif;
 }
@@ -347,6 +353,14 @@
   .title {
     font-size: 1.75rem;
     margin: 1.5rem 1.5rem 2.5rem 0;
+    background: linear-gradient(135deg, 
+      rgb(255, 169, 169) 30%, 
+      rgb(223, 124, 124) 50%, 
+      rgb(253, 141, 141) 70%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 }
 
@@ -354,6 +368,14 @@
   .title {
     font-size: 1.75rem;
     margin: 1.5rem 1.5rem 2.5rem 0;
+    background: linear-gradient(135deg, 
+      rgb(255, 169, 169) 30%, 
+      rgb(223, 124, 124) 50%, 
+      rgb(253, 141, 141) 70%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 
   .timelineContent {

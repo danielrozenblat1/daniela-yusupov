@@ -21,21 +21,16 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Button from "../button/Button"
 const Recommends=()=>{
-    const sliderSettings = {
-     
-        infinite: true,
-        speed: 700,
-        autoplaySpeed: 2500,
-        infinite: true,
-   
-        dots:false,
-        
-        slidesToShow: window.innerWidth < 450 ? 1 :
-                 
-                      window.innerWidth <= 1050 ? 2 : 4,
-        slidesToScroll:1,
-                     
-      };
+  const sliderSettings = {
+    autoplay: true,           // הוספת הגדרה זו להפעלת התנועה האוטומטית
+    autoplaySpeed: 3000,      // מהירות החלפה - 2 שניות
+    infinite: true,
+    speed: 700,
+    dots: false,
+    slidesToShow: window.innerWidth < 450 ? 1 :
+                  window.innerWidth <= 1050 ? 2 : 4,
+    slidesToScroll: 1,
+};
       const content = [
         {
           type: 'image',
@@ -108,7 +103,8 @@ const Recommends=()=>{
           },
         ];  
 return <>
-<div className={styles.title} id="לקוחות ממליצות">תשמעי קצת מהן</div>
+<div className={styles.title} id="לקוחות ממליצות">רק לפני הכל..</div>
+<div className={styles.explain}>ריכזתי עבורך מקבץ קטן מהבנות והכלות שעברו אצלי שהרגישו צורך לשתף על החוויה</div>
 <div className={styles.sliderContainer}>
         <Slider {...sliderSettings}>
           {content.map((item, index) => (

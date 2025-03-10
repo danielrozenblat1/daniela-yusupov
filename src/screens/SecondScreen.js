@@ -10,18 +10,18 @@ const SecondScreen=()=>{
 
 
     return <>
-<div className={styles.title}>רק לפני הכל...</div>
+<div className={styles.title} id="כלה לעתיד">וככה הן יצאו</div>
 <Works/>
-<div className={styles.title}>אני יודעת כמה חשוב לך</div>
+<div className={styles.title} id="ערב">אני יודעת כמה חשוב לך</div>
 <div className={styles.row}>
 <IconTextComponentNew text="שהשיער והאיפור יתאימו לסוג העור והפנים שלך" icon={hair}/>
 <IconTextComponentNew text="שהשיער והאיפור יחזיקו מעמד בלי טאצ׳אפים לאורך כל האירוע" icon={makeup}/>
 <IconTextComponentNew text="שתהיה מישהי בצד השני שבאמת תקשיב לך ולרצונות שלך" icon={wedding}/>
 </div>
-<div className={styles.description} style={{textDecoration:"underline"}}>ובשורה התחתונה, להגיע לאירוע שלך כשאת מרגישה בשיא!</div>
-<div className={styles.title}>לכן,אני שמה דגש שכל מי שעוברת אצלי</div>
+<div className={styles.description} style={{fontFamily:"Assistant"}}>ובשורה התחתונה, להגיע לאירוע שלך כשאת מרגישה שלמה עם עצמך!</div>
+<div className={styles.title}>לכן, אני שמה דגש שכל מי שעוברת אצלי</div>
 <div className={styles.row}>
-<Experienced text="תרגיש חופשי לבטא את עצמה והרצונות שלה לפני האירוע" number="01"/>
+<Experienced text="תרגיש חופשי לבטא את עצמה ואת הרצונות שלה לפני האירוע" number="01"/>
 <Experienced text="תקבל התאמה מדוייקת של השיער והאיפור" number="02"/>
 <Experienced text="תצא עם ביטחון מלא במראה שלה לאירוע" number="03"/>
 </div>
