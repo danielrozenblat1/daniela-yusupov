@@ -103,7 +103,7 @@ const Recommends=()=>{
           },
         ];  
 return <>
-<div className={styles.title} id="לקוחות ממליצות">רק לפני הכל..</div>
+<div className={styles.title} id="כלה לעתיד">רק לפני הכל..</div>
 <div className={styles.explain}>ריכזתי עבורך מקבץ קטן מהבנות והכלות שעברו אצלי שהרגישו צורך לשתף על החוויה</div>
 <div className={styles.sliderContainer}>
         <Slider {...sliderSettings}>

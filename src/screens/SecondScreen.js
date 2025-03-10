@@ -10,7 +10,7 @@ const SecondScreen=()=>{
 
 
     return <>
-<div className={styles.title} id="כלה לעתיד">וככה הן יצאו</div>
+<div className={styles.title} >וככה הן יצאו</div>
 <Works/>
 <div className={styles.title} id="ערב">אני יודעת כמה חשוב לך</div>
 <div className={styles.row}>
@@ -25,6 +25,7 @@ const SecondScreen=()=>{
 <Experienced text="תקבל התאמה מדוייקת של השיער והאיפור" number="02"/>
 <Experienced text="תצא עם ביטחון מלא במראה שלה לאירוע" number="03"/>
 </div>
+    <Button text="אני רוצה לשריין תאריך"/>
 <div className={styles.description}>שנייה לפני שאסביר לך איך הקסם קורה</div>
 
     </>
