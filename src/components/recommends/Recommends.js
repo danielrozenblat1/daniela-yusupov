@@ -104,7 +104,7 @@ const Recommends=()=>{
         ];  
 return <>
 <div className={styles.title} id="כלה לעתיד">רק לפני הכל..</div>
-<div className={styles.explain}>ריכזתי עבורך מקבץ קטן מהבנות והכלות שעברו אצלי שהרגישו צורך לשתף על החוויה</div>
+<div className={styles.explain}>מזמינה אותך לקרוא את מה שהיה לבנות שבחרו בי לומר על העבודה והחוויה איתי</div>
 <div className={styles.sliderContainer}>
         <Slider {...sliderSettings}>
           {content.map((item, index) => (

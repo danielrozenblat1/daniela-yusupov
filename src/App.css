@@ -1,5 +1,5 @@
 @import url("./fonts/font.css");
 body{
-    background: linear-gradient(145deg, rgb(249, 226, 216) 15%, rgba(250,236,223,1) 50%, rgb(250, 226, 215) 85%);
+    background: linear-gradient(145deg, rgb(235, 203, 190) 15%, rgb(255, 235, 216) 50%, rgb(251, 221, 207) 85%);
     overflow-x: hidden;
 }

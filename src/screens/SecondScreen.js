@@ -19,14 +19,14 @@ const SecondScreen=()=>{
 <IconTextComponentNew text="שתהיה מישהי בצד השני שבאמת תקשיב לך ולרצונות שלך" icon={wedding}/>
 </div>
 <div className={styles.description} style={{fontFamily:"Assistant"}}>ובשורה התחתונה, להגיע לאירוע שלך כשאת מרגישה שלמה עם עצמך!</div>
-<div className={styles.title}>לכן, אני שמה דגש שכל מי שעוברת אצלי</div>
+<div className={styles.title}>לכן, אני שמה דגש שכל מי שבוחרת בי</div>
 <div className={styles.row}>
 <Experienced text="תרגיש חופשי לבטא את עצמה ואת הרצונות שלה לפני האירוע" number="01"/>
 <Experienced text="תקבל התאמה מדוייקת של השיער והאיפור" number="02"/>
 <Experienced text="תצא עם ביטחון מלא במראה שלה לאירוע" number="03"/>
 </div>
-    <Button text="אני רוצה לשריין תאריך"/>
-<div className={styles.description}>שנייה לפני שאסביר לך איך הקסם קורה</div>
+    <Button text="דניאלה, אני רוצה לשריין תאריך"/>
+<div className={styles.description} style={{fontFamily:"Assistant"}}>שנייה לפני שאסביר לך איך הקסם קורה</div>
 
     </>
 }

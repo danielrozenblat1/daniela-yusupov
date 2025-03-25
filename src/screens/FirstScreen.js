@@ -48,7 +48,8 @@ const FirstScreen = () => {
       
       <div className={styles.contentBox}>
         <h1 className={styles.title}>DANIELA YUSUPOV</h1>
-        
+        <div className={styles.description} style={{fontFamily:'Assistant'}}>מאפרת ומסרקת כלות וערב </div>
+  <div className={styles.description} style={{fontWeight:'bold'}}> מתמחה באיפור לעור אקנתי/פוסט אקנה</div>
         <div className={styles.buttonContainer}>
           <GlassButton text="אני כלה לעתיד" targetId="כלה לעתיד"/>
           <GlassButton text="יש לי אירוע בקרוב" targetId="ערב"/>

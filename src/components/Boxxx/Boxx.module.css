@@ -1,0 +1,29 @@
+.box {
+    margin: 4% auto;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+  
+    background: linear-gradient(180deg, #FFF6E9 0%, #F8D7DA 100%);
+    box-shadow: 0px 2px 6px rgba(69, 43, 25, 0.25);
+    border-radius: 50px;
+  }
+  
+  .description {
+    font-family: "AssistantR";
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 1% auto;
+    direction: rtl;
+    width: 90%;
+    color: rgb(38, 19, 6);
+  }
+  
+  .icon {
+    width: 30%;
+    margin: 1% auto;
+    justify-content: center;
+  }

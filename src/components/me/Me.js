@@ -13,7 +13,7 @@ const AboutMe = () => {
         </div>
         <div className={styles.content}>
           <h1 className={styles.title}>דניאלה יוסופוב</h1>
-          <div className={styles.subtitle}>"לכל אחת מגיע להרגיש הכי יפה בעולם ביום המיוחד שלה"</div>
+          <div className={styles.subtitle}>""לכל אחת מגיע להרשות לעצמה ולהרגיש הכי יפה בעולם ביום המיוחד שלה""</div>
           <p className={styles.description}>
             המסע שלי בעולם האיפור והשיער התחיל מהתמודדות אישית עם אקנה ופוסט אקנה. החיפוש אחר מישהי שתדע לטפל בעור כמו שלי, הוביל אותי להבין לעומק את העור שלנו ואת הצרכים המיוחדים של כל אחת.
           </p>

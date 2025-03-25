@@ -1,0 +1,120 @@
+
+.container {
+  width: 100%;
+  direction: rtl;
+  margin: 2rem 0;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: 'Assistant', sans-serif;
+  font-weight: 600;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+.locationsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.locationItem {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  border: 1px solid #d2b48c; /* Light brown border */
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.locationItem:hover {
+  transform: translateY(-5px);
+}
+
+/* Changed icon color to white */
+.icon {
+  color:black;
+  margin-bottom: 0.5rem;
+}
+
+.locationText {
+  text-align: center;
+  margin: 0;
+  font-size: 1.1rem;
+  max-width: 100%;
+  word-break: break-word;
+  font-family: 'AssistantR', sans-serif;
+}
+
+/* Profile image container styles */
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem auto 2rem;
+  cursor: pointer;
+}
+
+.profileImage {
+  width: 200px;
+
+  object-fit: contain;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.profileImage:hover {
+  transform: scale(1.05);
+}
+
+.imageText {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+  font-family: 'AssistantR', sans-serif;
+}
+
+/* Added styles for social icons section */
+.socialContainer {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 1rem;
+}
+
+.socialIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+}
+
+.socialIcon:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  .locationsGrid {
+    gap: 1rem;
+  }
+  
+  .locationItem {
+    width: 130px;
+  }
+  
+  .socialContainer {
+    gap: 2rem;
+  }
+}
