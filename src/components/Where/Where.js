@@ -17,7 +17,7 @@ const Where = () => {
   };
 
   const handleFacebookClick = () => {
-    window.open("https://www.facebook.com/daniela.yosupov", "_blank");
+    window.open("https://www.facebook.com/share/1B9bxHzq15/?mibextid=wwXIfr", "_blank");
   };
 
   const handleImageClick = () => {
